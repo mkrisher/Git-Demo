@@ -1,0 +1,32 @@
+= Git Demo
+
+Version: 0.0.1
+
+== Who are we
+
+* Tim Harvey - Literacy5 | twitter.com/timh
+
+* Michael Krisher - krash inc | twitter.com/mkrisher
+
+== What is Git?
+
+Git is a free & open source, distributed version control system designed to handle everything from small to very large projects with speed and efficiency. (http://git-scm.com/)
+
+Git is used for version control of files, much like tools such as Mercurial, Bazaar, Subversion, CVS, Perforce, and Visual SourceSafe.
+
+== What is Version Control?
+
+Version control is the management of changes to documents, programs, and other information stored as computer files. Version control is often referred to as SCM 
+(source control management). It is most commonly used where a team of people may be changing the same files. Changes are usually identified by a number or letter 
+code, termed the "revision number", "revision level", or simply "revision". For example, an initial set of files is "revision 1". When the first change is made, 
+the resulting set is "revision 2", and so on. Each revision is associated with a timestamp and the person making the change. Revisions can be compared, restored, 
+and with some types of files, merged. (http://en.wikipedia.org/wiki/Revision_control)
+
+== OK, so why Git?
+
+* Git is a free distributed revision control, or software source code management project with an emphasis on being fast. Git was initially designed and developed 
+by Linus Torvalds for Linux kernel development.
+
+* Every Git working directory is a full-fledged repository with complete history and full revision tracking capabilities, not dependent on network access or a central server.
+
+== What is a repository and what does it get me?
