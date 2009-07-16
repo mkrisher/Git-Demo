@@ -10,7 +10,7 @@ Version: 0.0.1
 
 == What is Git?
 
-Git is a free & open source, distributed version control system designed to handle everything from small to very large projects with speed and efficiency. (http://git-scm.com/)
+Git is a free and open source, distributed version control system designed to handle everything from small to very large projects with speed and efficiency. (http://git-scm.com/)
 
 Git is used for version control of files, much like tools such as Mercurial, Bazaar, Subversion, CVS, Perforce, and Visual SourceSafe.
 
@@ -24,9 +24,9 @@ and with some types of files, merged. (http://en.wikipedia.org/wiki/Revision_con
 
 == OK, so why Git?
 
-* Git is a free distributed revision control, or software source code management project with an emphasis on being fast. Git was initially designed and developed 
-by Linus Torvalds for Linux kernel development.
+* Git is a free distributed revision control, or software source code management project with an emphasis on being fast. Git was initially designed and developed by Linus Torvalds for Linux kernel development.
 
 * Every Git working directory is a full-fledged repository with complete history and full revision tracking capabilities, not dependent on network access or a central server.
 
 == What is a repository and what does it get me?
+
