@@ -38,12 +38,13 @@ Version control augments your memory and gives you a safety net when things go w
 
 === I'm a lone developer
 
+Just because you are not co-writing files doesn't mean you can't benefit from Git
 
+* Branching is a really powerful way of creating a replicant of your master files so you can try something new and not have to back out a lot of changes
 
 === I partner with a development team
 
 In short, if you work in a team environment without a version control system, you are out of your mind. 
-
 
 == OK, so why Git?
 
