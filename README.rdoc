@@ -30,3 +30,53 @@ and with some types of files, merged. (http://en.wikipedia.org/wiki/Revision_con
 
 == What is a repository and what does it get me?
 
+* A repository is just a set of files that are under version control. For example anything in a folder or directory.
+
+* A repository is "watched" by version control applications for any changes to files, documents, or programs
+
+== How do I create a Git repository
+
+From the command line issue the following:
+
+* mkdir test
+
+* cd test
+
+* git init
+
+That's it. The "test" directory is now under Git's watchful eye.
+
+== Now that I have a repository what do I do with it
+
+You add files and track changes. So let's add a file.
+
+* touch README
+
+* git status
+
+* git add README
+
+* git status
+
+* git commit -m "init add of the README"
+
+* git status
+
+== So now what?
+
+Now we continue to add the files that we need and as we make changes we commit those changes. To see what that looks like edit the README, then issue a git status
+
+== Ignore some files
+
+What if we want to add a file to the directory but don't want Git to track it? Git has built in ignoring!
+
+* create a new file called .gitignore
+
+* add the file name of the file you want to ignore
+
+* note: this should be done before you ever add the file using "git add"
+
+== OK, so I have a history of files, what else can I do?
+
+
+
