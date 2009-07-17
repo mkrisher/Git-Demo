@@ -20,6 +20,10 @@ Version control is the management of changes to documents, programs, and other i
 
 == Why should I care about version control?
 
+A big part of the argument for using a form of version control ultimately stems back to software craftsmanship. As professionals, we strive to build reliable, maintainable code for ourselves and others. Version Control holds an important  place in the toolkit. 
+
+Version control augments your memory and gives you a safety net when things go wrong. At its very basic level, it helps you recall what you changed, even months later, and acts as an extremely robust backup. More sophisticated version control systems speed development by allowing multiple devs to work in the same code files at one time and allow management of multiple versions and features.
+
 === What are the big advantages?
 
 * Detailed log of every change
@@ -33,6 +37,7 @@ Version control is the management of changes to documents, programs, and other i
 * Maintain separate production release code and development code
 
 === I'm a lone developer
+
 
 
 === I partner with a development team
