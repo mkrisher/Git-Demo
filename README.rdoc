@@ -16,17 +16,44 @@ Git is used for version control of files, much like tools such as Mercurial, Baz
 
 == What is Version Control?
 
-Version control is the management of changes to documents, programs, and other information stored as computer files. Version control is often referred to as SCM 
-(source control management). It is most commonly used where a team of people may be changing the same files. Changes are usually identified by a number or letter 
-code, termed the "revision number", "revision level", or simply "revision". For example, an initial set of files is "revision 1". When the first change is made, 
-the resulting set is "revision 2", and so on. Each revision is associated with a timestamp and the person making the change. Revisions can be compared, restored, 
-and with some types of files, merged. (http://en.wikipedia.org/wiki/Revision_control)
+Version control is the management of changes to documents, programs, and other information stored as computer files. Version control is often referred to as SCM (source control management). It is most commonly used where a team of people may be changing the same files. Changes are usually identified by a number or letter code, termed the "revision number", "revision level", or simply "revision". For example, an initial set of files is "revision 1". When the first change is made, the resulting set is "revision 2", and so on. Each revision is associated with a timestamp and the person making the change. Revisions can be compared, restored, and with some types of files, merged. (http://en.wikipedia.org/wiki/Revision_control)
+
+== Why should I care about version control?
+
+A big part of the argument for using a form of version control ultimately stems back to software craftsmanship. As professionals, we strive to build reliable, maintainable code for ourselves and others. Version Control holds an important  place in the toolkit. 
+
+Version control augments your memory and gives you a safety net when things go wrong. At its very basic level, it helps you recall what you changed, even months later, and acts as an extremely robust backup. More sophisticated version control systems speed development by allowing multiple devs to work in the same code files at one time and allow management of multiple versions and features.
+
+=== What are the big advantages?
+
+* Detailed log of every change
+
+* Roll back changes quickly
+
+* Teamwork without stepping on toes
+
+* Deployment automation
+
+* Maintain separate production release code and development code
+
+=== I'm a lone developer
+
+
+
+=== I partner with a development team
+
+In short, if you work in a team environment without a version control system, you are out of your mind. 
+
 
 == OK, so why Git?
 
 * Git is a free distributed revision control, or software source code management project with an emphasis on being fast. Git was initially designed and developed by Linus Torvalds for Linux kernel development.
 
 * Every Git working directory is a full-fledged repository with complete history and full revision tracking capabilities, not dependent on network access or a central server.
+
+* Branching is fast and easy. New features may be built up in separate branches and easily merged in when complete.
+
+* GitHub. A "social coding" tool, GitHub offers sharing and collaboration. You can publish public repos, work on private repos, and keep up to date on changes to tools you use. Find an issue with someone else's code? No probelem! There is a mechanism to grab a copy of their project, make the fixes, then they can automatically merge your changes in.
 
 == What is a repository and what does it get me?
 
