@@ -46,5 +46,9 @@ In short, if you work in a team environment without a version control system, yo
 
 * Every Git working directory is a full-fledged repository with complete history and full revision tracking capabilities, not dependent on network access or a central server.
 
+* Branching is fast and easy. New features may be built up in separate branches and easily merged in when complete.
+
+* GitHub. A "social coding" tool, GitHub offers sharing and collaboration. You can publish public repos, work on private repos, and keep up to date on changes to tools you use. Find an issue with someone else's code? No probelem! There is a mechanism to grab a copy of their project, make the fixes, then they can automatically merge your changes in.
+
 == What is a repository and what does it get me?
 
