@@ -36,7 +36,29 @@ Version control augments your memory and gives you a safety net when things go w
 
 * Maintain separate production release code and development code
 
-* quickly make duplicate sets of files to test changes
+* Quickly make duplicate sets of files to test changes
+
+* Free and open source
+
+* Easy to setup locally and on a remote server (Windows OS as an exception)
+
+* No remote server needed, Git was designed from the ground up as a distributed version control system
+
+* All Git benefits are in place locally versus on the server
+
+* Git is fast, performance is much better than others
+
+* Git repo file sizes are smaller than others like Subversion
+
+=== What are the big disadvantages?
+
+* no access control, because the repos are distributed and not controlled through the central repo on the server
+
+* no GUIs really, gitx doesn't really count compared to TortoiseSVN, or SVNx
+
+* partial checkout is not supported in Git, you do a pull or checkout and get the entire repo
+
+* Git uses large SHAs for revision numbers, where SVN increments starting at 1
 
 === I'm a lone developer
 
@@ -110,11 +132,13 @@ What if we want to add a file to the directory but don't want Git to track it? G
 
 == OK, so I have a history of files, what else can I do?
 
-=== branching
+=== branching and merging
 
 * branching allows you to create a duplicate set of files locally, without physically creating a whole duplicate set of files. huh?
 
 * branching allows a developer to maintain a working copy of the site, called the master branch, and also have multiple other copies of the site for adding new features, writing tests, etc...
+
+* merges are recorded as part of the proper history of the repository
 
 As an example, I have my working branch called master. The master branch is the set of files that are currently live on the server. But the client has called and has asked me to add a contact form. I can quickly create a "contact" branch. The contact branch IS the master branch files, but I can make changes to the files and if I switch back to the master, those changes will not be represented.
 
@@ -126,11 +150,23 @@ So now let's say I am finished with the contact form. It is ready to go and be d
 
 Now each iteration of the site gets a new branch, the new files and lines are added, then once finished they are merged back into the master. This workflow syncs up beautifully with Test Driven Development where each thing you add to a site is spelled out.
 
-=== logging
-
-
 === rebasing
 
+Previously we mentioned fixing a typo in the master branch. Nothing huge. But let's say the change was more significant, or a team member has made a large merge into the master branch and we have pulled that in. We want to make sure that what we are doing in our contact branch does not cause a conflict. We need to get those master changes into our contact branch. This is called rebasing.
+
+Rebasing is simply done by issuing git rebase master, while in the contact branch. However, there can be conflicts. Let's say your team member has made an update to the README, and you have done the same. While doing the rebase, Git will tell you what files are not in sync. 
+
+You have to open those files, and fix the conflicts designated by git with symbols like <<<<<<<<<<<<<HEAD, etc....
+
+Once you have fixed the conflicts, you should add those changes to your contact branch, using git add. As always, the files will all show with a git status.
+
+=== logging
+
+Git provides a dead simple way of quickly viewing the commit history of the repo by doing a git log and seeing each commit, it's message, SHA, and author
+
+Git logging makes it extremely easy to see when a change was introduced, the message attached and who committed it. Makes it easy to see when something was introduced whether that is a bug, feature, etc.... Pretty self explanatory
+
+You can also use the Log to see previous commits if you want to ever rollback to or checkout a previous state of the repo. git log --stat will include the files that were changed in each commit.
 
 === diff(ing)
 
