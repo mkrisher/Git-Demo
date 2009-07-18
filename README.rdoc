@@ -36,11 +36,15 @@ Version control augments your memory and gives you a safety net when things go w
 
 * Maintain separate production release code and development code
 
+* quickly make duplicate sets of files to test changes
+
 === I'm a lone developer
 
 Just because you are not co-writing files doesn't mean you can't benefit from Git
 
 * Branching is a really powerful way of creating a replicant of your master files so you can try something new and not have to back out a lot of changes
+
+* using a remote server means an offsite backup that can quickly be restored if needed
 
 === I partner with a development team
 
@@ -100,11 +104,41 @@ What if we want to add a file to the directory but don't want Git to track it? G
 
 * create a new file called .gitignore
 
-* add the file name of the file you want to ignore
+* add the file name (or directory name) of the file you want to ignore
 
 * note: this should be done before you ever add the file using "git add"
 
 == OK, so I have a history of files, what else can I do?
+
+=== branching
+
+* branching allows you to create a duplicate set of files locally, without physically creating a whole duplicate set of files. huh?
+
+* branching allows a developer to maintain a working copy of the site, called the master branch, and also have multiple other copies of the site for adding new features, writing tests, etc...
+
+As an example, I have my working branch called master. The master branch is the set of files that are currently live on the server. But the client has called and has asked me to add a contact form. I can quickly create a "contact" branch. The contact branch IS the master branch files, but I can make changes to the files and if I switch back to the master, those changes will not be represented.
+
+Demo time: Let's say I create a new file contact.html in the contact branch. If I switch back to the master branch, the contact.html file will not be there. Not until I merge the branches or copy over the file. Notice I did not copy a bunch of files and paste them when creating the contact branch. Git just keeps track of the files present and lines in the files I have changed as I move from branch to branch.
+
+So why is this powerful. Now let's say that the client calls and there is a typo on one of the pages. I don't want to include my contact branch changes, I just want to fix the typo and deploy that quick change. Luckily, all I have to do is switch back to the master branch, make the change and then deploy. This example isn't very complex, but let's say you were right in the middle of completely changing the top navigation of a site. You don't want to back everything out, just to fix a small error.
+
+So now let's say I am finished with the contact form. It is ready to go and be deployed. I can go back to my master and pull in all the changes I have made to the contact branch. git merge contact. Then I can remove the contact branch since it is not needed any longer. 
+
+Now each iteration of the site gets a new branch, the new files and lines are added, then once finished they are merged back into the master. This workflow syncs up beautifully with Test Driven Development where each thing you add to a site is spelled out.
+
+=== logging
+
+
+=== rebasing
+
+
+=== diff(ing)
+
+
+
+
+
+
 
 
 
