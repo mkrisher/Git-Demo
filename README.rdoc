@@ -4,7 +4,7 @@ Version: 0.0.1
 
 == Who are we
 
-* Tim Harvey - Literacy5 | twitter.com/timh
+* Tim Harvey - Literacy5 | twitter.com/tihm
 
 * Michael Krisher - krash inc | twitter.com/mkrisher
 
