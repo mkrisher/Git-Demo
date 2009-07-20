@@ -170,6 +170,23 @@ You can also use the Log to see previous commits if you want to ever rollback to
 
 === diff(ing)
 
+As with any version control system, a major benefit is seeing the difference of file version to file version. Git makes viewing diffs very easy.
+
+The first way is through the built in server that comes with git. Just issue the gitweb command. Once running the complete log of the current repo is available at http://127.0.0.1:1234
+
+The web interface makes it very very easy to view the diffs in a file.
+
+This party tools such as GitX and GitK make it easy to view diffs, branches, and merges.
+
+But let's say you have a file marked as ready to commit, but you don't remember what you changed. Before you commit the file simply issue a git diff command
+
+But you know you commited a file last time and you can't remember what you changed, simply step back through the revision of the branch doing a git diff master~1 or to step back three commits ago git diff master~3
+
+== Now that you've seen Git, go try it out.
+
+This is just touching the surface of Git. Hopefully you are interested in trying it out. Thanks, and tip your waiters!
+
+
 
 
 
